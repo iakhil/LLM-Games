@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Negotiate</title>
 </head>
 <body>
     <h1>Welcome to Negotiate!</h1>
     
-    <form action="GET"></form>
+    <form action="http://127.0.0.1:5000/" method="post">
+        <input type="text" name="user-input" placeholder="Enter your message here." />
+        <input type="submit" text="Submit"></button>
 
+    </form>
 
+    {% if result %}
+
+    <div class="result">{{ result }}</div>
+
+    {% endif %}
 </body>
 </html>
